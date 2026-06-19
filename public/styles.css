@@ -16,6 +16,7 @@
     --second-bg-color:#191919;
     --text-color:white;
     --main-color:limegreen;
+    --second-color: green;
 }
 html{
     font-size:62.5%;
@@ -492,127 +493,127 @@ margin:20px 0
 
 .bar .progess-line.javascript span{
     width:100%;
-    background-color: grey;
+    background-color: var(--second-color);
     box-shadow: 0 0 25px grey;
     transition: 0.3s ease;
 }
 
 .bar .progess-line.javascript span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 
 
 .bar .progess-line.react span{
     width:90%;
-    background-color: pink;
-    box-shadow: 0 0 25px  pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px  var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.react span:hover{
-    box-shadow: 0 0 25px  pink,
-                0 0 50px   pink
+    box-shadow: 0 0 25px  var(--second-color),
+                0 0 50px   var(--second-color)
 }
 
 
 .bar .progess-line.html span{
     width:100%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.html span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 
 .bar .progess-line.sass span{
     width:70%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.sass span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 
 .bar .progess-line.express span{
     width:80%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.express span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 .bar .progess-line.mangodb span{
     width:70%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.progess-line.mangodb span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 .bar .progess-line.css span{
     width:75%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.css span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 .bar .progess-line.rest-api span{
     width:80%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.rest-api span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 .bar .progess-line.python span{
     width:85%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.python span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 .bar .progess-line.postgreSQL span{
     width:90%;
-    background-color: pink;
-    box-shadow: 0 0 25px pink;
+    background-color: var(--second-color);
+    box-shadow: 0 0 25px var(--second-color);
     transition: 0.3s ease;
 }
 
 .bar .progess-line.postgreSQL span:hover{
-    box-shadow: 0 0 25px pink,
-                0 0 50px  pink;
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px  var(--second-color);
 }
 
 
