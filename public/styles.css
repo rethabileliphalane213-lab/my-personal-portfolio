@@ -374,16 +374,16 @@ span{
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
+    aspect-ratio: 16 / 10;
     box-shadow: 0 0 1rem var(--bg-color);
-    display: flex;
 }
 
 .project-box img{
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
     transition: transform .4s ease;
 }
-
 
 
 .project-box{
@@ -393,7 +393,7 @@ span{
 
 .project-box .project-info{
     position: absolute;
-    inset: 0; /* top:0 right:0 bottom:0 left:0 */
+    inset: 0;
 
     display: flex;
     justify-content: center;
@@ -829,7 +829,7 @@ span{
 .about-img img{
     border-radius:2rem;
     transition:.5s ease;
-    filter:grayscale(100%);
+   
 }
 
 .about-img img:hover{
