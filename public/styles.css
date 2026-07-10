@@ -396,11 +396,12 @@ span{
     inset: 0;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+
     text-align: center;
-    padding: 0 4rem;
+    padding: 2rem;
 
     background: rgba(0,0,0,.8);
 
@@ -436,15 +437,12 @@ span{
     font-weight: 600;
 }
 
-.project-info a{
-    color: white;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width:5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
+
+.project-info p{
+    font-size:1.6rem;
+    margin: 1rem 0;
+    max-height: 8rem;
+    overflow-y: auto;
 }
 
 .project-info a i{
