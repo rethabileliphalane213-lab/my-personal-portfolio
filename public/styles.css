@@ -374,7 +374,7 @@ span{
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
-    aspect-ratio: 16 / 10;
+  height:320px;
     box-shadow: 0 0 1rem var(--bg-color);
 }
 
