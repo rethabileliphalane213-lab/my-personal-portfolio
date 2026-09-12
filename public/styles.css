@@ -868,3 +868,317 @@ span{
 .read-more-btn:hover {
     transform: scale(1.05);
 }
+
+
+
+.certificates {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Heading */
+
+.certificates .heading {
+    margin-bottom: 4rem;
+}
+
+
+/* Certificate container */
+
+.cert-pic {
+    width: 70%;
+    max-width: 700px;
+    height: 550px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    padding: 1rem;
+
+    border-radius: 2rem;
+
+    background: linear-gradient(
+        145deg,
+        rgba(50, 205, 50, 0.12),
+        rgba(0, 0, 0, 0.4)
+    );
+
+    border: 2px solid rgba(50, 205, 50, 0.3);
+
+    box-shadow:
+        0 0 15px rgba(50, 205, 50, 0.15),
+        inset 0 0 20px rgba(50, 205, 50, 0.05);
+
+    transition: 0.4s ease;
+
+    overflow: hidden;
+}
+
+
+/* Green glow around the certificate */
+
+.cert-pic::before {
+    content: "";
+
+    position: absolute;
+
+    width: 200%;
+    height: 200%;
+
+    background: conic-gradient(
+        transparent,
+        var(--main-color),
+        transparent 30%
+    );
+
+    animation: rotateGlow 6s linear infinite;
+
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+
+/* Inner background */
+
+.cert-pic::after {
+    content: "";
+
+    position: absolute;
+    inset: 3px;
+
+    background: var(--bg-color);
+
+    border-radius: 1.8rem;
+
+    z-index: 0;
+}
+
+
+/* Hovering over certificate area */
+
+.cert-pic:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--main-color);
+
+    box-shadow:
+        0 0 25px rgba(50, 205, 50, 0.35),
+        0 0 60px rgba(50, 205, 50, 0.15);
+}
+
+.cert-pic:hover::before {
+    opacity: 0.5;
+}
+
+
+/* Certificate image */
+
+.cert-pic img {
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+
+    cursor: pointer;
+
+    position: relative;
+
+    z-index: 1;
+
+    border-radius: 1rem;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+/* Image hover */
+
+.cert-pic:hover img {
+    transform: scale(1.03);
+
+    filter: brightness(1.08);
+
+    box-shadow:
+        0 0 20px rgba(50, 205, 50, 0.25);
+}
+
+
+/* Moving glow */
+
+@keyframes rotateGlow {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Navigation buttons */
+
+.controll-btn {
+    width: 70%;
+    max-width: 700px;
+
+    margin: 3rem auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Previous / Next buttons */
+
+.controll-btn button {
+    padding: 1.2rem 2.8rem;
+
+    background: transparent;
+
+    color: var(--main-color);
+
+    border: 2px solid var(--main-color);
+
+    border-radius: 3rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 0 10px rgba(50, 205, 50, 0.15);
+}
+
+
+/* Button hover */
+
+.controll-btn button:hover {
+    background: var(--main-color);
+
+    color: black;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 15px var(--main-color),
+        0 0 35px rgba(50, 205, 50, 0.4);
+}
+
+
+/* Button click */
+
+.controll-btn button:active {
+    transform: scale(0.95);
+}
+
+
+/* Full image modal */
+
+.image-modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    backdrop-filter: blur(10px);
+
+    animation: modalFade 0.3s ease;
+}
+
+
+/* Full certificate */
+
+.image-modal img {
+    max-width: 95vw;
+    max-height: 95vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 1rem;
+
+    box-shadow:
+        0 0 30px rgba(50, 205, 50, 0.3);
+
+    animation: imageZoom 0.35s ease;
+}
+
+
+/* Close button */
+
+#close-modal {
+    position: fixed;
+
+    top: 20px;
+    right: 30px;
+
+    font-size: 4rem;
+
+    color: white;
+
+    cursor: pointer;
+
+    z-index: 1001;
+
+    transition: 0.3s ease;
+}
+
+#close-modal:hover {
+    color: var(--main-color);
+
+    transform: rotate(90deg) scale(1.15);
+
+    text-shadow:
+        0 0 15px var(--main-color);
+}
+
+
+/* Modal animations */
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes imageZoom {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
