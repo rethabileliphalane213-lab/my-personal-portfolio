@@ -835,3 +835,36 @@ span{
     transform:scale(1.03);
     box-shadow:0 0 35px rgba(50,205,50,.4);
 }
+
+
+
+.hide-show {
+    display: none;
+}
+
+.hide-show.show-project {
+    display: block;
+}
+
+.read-more-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.read-more-btn {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+    transform: scale(1.05);
+}
