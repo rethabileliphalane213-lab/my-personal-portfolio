@@ -313,18 +313,14 @@ span{
 }
 
 .service-container {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .service-container .service-box {
-    flex: 1 1 40rem;
-    max-width: 55rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;

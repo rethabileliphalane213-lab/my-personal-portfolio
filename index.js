@@ -128,3 +128,33 @@ modal.addEventListener("click", (e) => {
         modal.style.display = "none"
     }
 })
+
+
+
+
+
+
+
+const readMore = document.querySelectorAll(".read-more");
+
+readMore.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const container = button.closest(".service-box");
+
+        const hiddenProjects = container.querySelectorAll(".more-info");
+
+        hiddenProjects.forEach(project => {
+            project.classList.toggle("show");
+        });
+
+        if (button.textContent.trim() === "Read More") {
+            button.textContent = "Show Less";
+        } else {
+            button.textContent = "Read More";
+        }
+
+    });
+
+});
