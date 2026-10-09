@@ -158,3 +158,23 @@ readMore.forEach(button => {
     });
 
 });
+
+
+
+const serviceReadMoreBtn = document.querySelector(".service-box-read-more-btn");
+
+serviceReadMoreBtn.addEventListener("click", () => {
+
+    const hiddenProjects = document.querySelectorAll(".box-hide");
+
+    hiddenProjects.forEach(project => {
+        project.classList.toggle("show");
+    });
+
+    if (serviceReadMoreBtn.textContent.trim() === "More Services") {
+        serviceReadMoreBtn.textContent = "Show Less";
+    } else {
+        serviceReadMoreBtn.textContent = "More Services";
+    }
+
+});

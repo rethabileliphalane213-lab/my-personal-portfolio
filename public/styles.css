@@ -336,6 +336,33 @@ span{
    
 }
 
+.box-hide {
+    display: none;
+}
+
+.box-hide.show {
+    display: block;
+}
+
+.service-box-read-more-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 2rem;
+    background: transparent;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.service-box-read-more-btn  {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
 .service-box i {
     font-size: 7rem;
     color: var(--main-color);
