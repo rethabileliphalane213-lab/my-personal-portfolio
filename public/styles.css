@@ -333,8 +333,7 @@ span{
 .service-container .service-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
-    background-color: white;
-    color: black;
+   
 }
 
 .service-box i {
@@ -374,12 +373,15 @@ span{
 }
 
 .read-more {
-    padding: 1rem 2rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
     border: 0.2rem solid var(--main-color);
     border-radius: 2rem;
     background: transparent;
     color: var(--main-color);
     font-size: 1.5rem;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -403,6 +405,59 @@ span{
     background-color: #1d1d1d;
 }
 
+/* More Information */
+
+.more-info {
+    display: none;
+    text-align: left;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 0.2rem solid var(--main-color);
+}
+
+.more-info.show {
+    display: block;
+}
+
+.more-info h4 {
+    color: var(--main-color);
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+}
+
+.more-info h4:first-child {
+    margin-top: 0;
+}
+
+.more-info p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.more-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+
+.more-info ul li {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 0.7rem 0 0.7rem 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.more-info ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+}
 
 
 
