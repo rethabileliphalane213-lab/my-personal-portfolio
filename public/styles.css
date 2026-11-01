@@ -509,7 +509,7 @@ span{
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
-  height:320px;
+  height:420px;
     box-shadow: 0 0 1rem var(--bg-color);
 }
 
@@ -526,7 +526,7 @@ span{
     overflow: hidden;
 }
 
-.project-box .project-info{
+.project-box .project-info {
     position: absolute;
     inset: 0;
 
@@ -536,7 +536,7 @@ span{
     align-items: center;
 
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
 
     background: rgba(0,0,0,.8);
 
@@ -546,6 +546,7 @@ span{
 
     z-index: 1;
 }
+
 
 .project-box:hover .project-info{
     opacity: 1;
@@ -560,16 +561,19 @@ span{
     transform: scale(1.08);
 }
 
-.project-info h4{
-    font-size:3rem;
+.project-info h4 {
+    font-size: 3rem;
     color: white;
-    font-weight:800;
+    font-weight: 800;
 }
 
-.project-info p{
-    font-size:1.6rem;
-    margin: 0.3rem 0 0.3rem;
-    font-weight: 600;
+.project-info p {
+    flex: 1;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 2rem 0;
 }
 
 
