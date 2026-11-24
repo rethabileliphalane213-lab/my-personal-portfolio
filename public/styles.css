@@ -259,8 +259,8 @@ span{
     cursor:pointer
 }
 
-@media (max-width: 768px) {
-    .about-img img {
+@media (max-width: 1020px) {
+    .about-img {
         display: none;
     }
 }
