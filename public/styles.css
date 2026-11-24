@@ -201,23 +201,23 @@ span{
 
   @keyframes words {
     0%, 20% {
-      content: "Software Developer";
+      content: "I'm a Software Developer";
     }
 
     21%, 40% {
-      content: "Software Developer";
+      content: "I'm a Software Developer";
     }
 
     41%, 60% {
-      content: "Software Developer";
+      content: "I'm a Software Developer";
     }
 
     61%, 80% {
-      content: "Software Developer";
+      content: " I'm a Software Developer";
     }
 
     81%, 100% {
-      content: "Software Developer";
+      content: "I'm a Software Developer";
     }
   }
 
